@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>記帳系統</h2>
+
+<h3>總收入：<span id="income">0</span></h3>
+<h3>總支出：<span id="expense">0</span></h3>
+<h3>結餘：<span id="balance">0</span></h3>
+
+<select id="category">
+  <option value="餐飲">餐飲</option>
+  <option value="交通">交通</option>
+  <option value="娛樂">娛樂</option>
+  <option value="其他">其他</option>
+</select>
+
+<select id="flowType">
+  <option value="income">收入</option>
+  <option value="expense">支出</option>
+</select>
+
+<input id="amount" placeholder="金額">
+<input id="note" placeholder="備註">
+
+<button onclick="add()">新增</button>
+<button onclick="logout()">登出</button>
+
+<ul id="list"></ul>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
