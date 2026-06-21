@@ -134,3 +134,4 @@ app.listen(PORT, () => {
 console.log("STATIC PATH =", path.join(__dirname, "public"));
 console.log(User);
 console.log(Account);
+console.log("SESSION_SECRET =", process.env.SESSION_SECRET);
