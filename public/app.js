@@ -6,6 +6,7 @@ async function loadData() {
     alert("請先登入");
     location.href = "login.html";
     return;
+    loadData();
   }
 
   const data = await res.json();
